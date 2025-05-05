@@ -1,631 +1,703 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Spotless Hungry Crocodile</title>
+    <title>Stardom Homes | Premium Home Construction</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
+    <meta name="description" content="Stardom Homes - Building your dream homes with quality craftsmanship and attention to detail." />
     <meta property="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="Stardom Homes | Premium Home Construction" />
+    <meta property="og:description" content="Building dreams, one home at a time. Your trusted partner in premium house construction." />
 
     <style data-tag="reset-style-sheet">
       html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
     </style>
     <style data-tag="default-style-sheet">
       html {
-        font-family: Inter;
+        font-family: 'Montserrat', sans-serif;
         font-size: 16px;
       }
 
       body {
         font-weight: 400;
-        font-style:normal;
+        font-style: normal;
         text-decoration: none;
         text-transform: none;
         letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
-
+        line-height: 1.6;
+        color: #333333;
+        background-color: #FFFFFF;
       }
     </style>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/animate.css@4.1.1/animate.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Helvetica Neue"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    
     <style>
-      @keyframes fade-in-left {
-        0% {
-          opacity: 0;
-          transform: translateX(-20px);
+      :root {
+        --dl-color-primary-gold: #d4af37;
+        --dl-color-primary-lightgold: #f5eacf;
+        --dl-color-primary-darkgold: #b8860b;
+        --dl-color-neutral-white: #ffffff;
+        --dl-color-neutral-light: #f5f5f5;
+        --dl-color-neutral-medium: #e0e0e0;
+        --dl-color-neutral-dark: #333333;
+        --dl-color-neutral-black: #000000;
+      }
+      
+      .premium-heading {
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        color: var(--dl-color-neutral-dark);
+      }
+      
+      .premium-button {
+        padding: 12px 24px;
+        background-color: var(--dl-color-primary-gold);
+        color: var(--dl-color-neutral-white);
+        border: none;
+        border-radius: 2px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+      }
+      
+      .premium-button:hover {
+        background-color: var(--dl-color-primary-darkgold);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      
+      .secondary-button {
+        padding: 12px 24px;
+        background-color: transparent;
+        color: var(--dl-color-primary-gold);
+        border: 2px solid var(--dl-color-primary-gold);
+        border-radius: 2px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+      }
+      
+      .secondary-button:hover {
+        background-color: var(--dl-color-primary-lightgold);
+        color: var(--dl-color-primary-darkgold);
+      }
+      
+      .hero-section {
+        background-color: var(--dl-color-neutral-light);
+        background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+        background-size: cover;
+        background-position: center;
+        padding: 120px 5%;
+        text-align: center;
+      }
+      
+      .services-section {
+        padding: 80px 5%;
+        background-color: var(--dl-color-neutral-white);
+      }
+      
+      .feature-card {
+        border-radius: 4px;
+        padding: 30px;
+        margin: 15px 0;
+        background-color: var(--dl-color-neutral-white);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+        border-bottom: 3px solid var(--dl-color-primary-gold);
+      }
+      
+      .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      }
+      
+      .feature-icon {
+        color: var(--dl-color-primary-gold);
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+      
+      .testimonial-section {
+        background-color: var(--dl-color-primary-lightgold);
+        padding: 80px 5%;
+      }
+      
+      .testimonial-card {
+        background-color: var(--dl-color-neutral-white);
+        padding: 30px;
+        border-radius: 4px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        position: relative;
+      }
+      
+      .testimonial-card:before {
+        content: """;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 80px;
+        color: var(--dl-color-primary-lightgold);
+        font-family: serif;
+        opacity: 0.5;
+      }
+      
+      .footer-section {
+        background-color: var(--dl-color-neutral-dark);
+        color: var(--dl-color-neutral-white);
+        padding: 60px 5% 40px;
+      }
+      
+      .footer-link {
+        color: var(--dl-color-neutral-medium);
+        transition: color 0.3s ease;
+      }
+      
+      .footer-link:hover {
+        color: var(--dl-color-primary-gold);
+      }
+      
+      .social-icon {
+        color: var(--dl-color-primary-gold);
+        font-size: 1.5rem;
+        margin-right: 15px;
+        transition: all 0.3s ease;
+      }
+      
+      .social-icon:hover {
+        color: var(--dl-color-primary-lightgold);
+        transform: translateY(-3px);
+      }
+      
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 15px 5%;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .navbar-logo {
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 1.8rem;
+        color: var(--dl-color-neutral-dark);
+      }
+      
+      .navbar-logo span {
+        color: var(--dl-color-primary-gold);
+      }
+      
+      .navbar-links {
+        display: flex;
+        gap: 30px;
+      }
+      
+      .navbar-link {
+        font-weight: 500;
+        position: relative;
+      }
+      
+      .navbar-link:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: var(--dl-color-primary-gold);
+        transition: width 0.3s ease;
+      }
+      
+      .navbar-link:hover:after {
+        width: 100%;
+      }
+      
+      .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+      
+      .section-title h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        color: var(--dl-color-neutral-dark);
+      }
+      
+      .section-title .accent-line {
+        width: 80px;
+        height: 3px;
+        background-color: var(--dl-color-primary-gold);
+        margin: 0 auto 20px;
+      }
+      
+      .section-title p {
+        font-size: 1.1rem;
+        color: #666;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      
+      .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+      
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+      }
+      
+      .grid-4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+      }
+      
+      @media (max-width: 992px) {
+        .grid-3, .grid-4 {
+          grid-template-columns: repeat(2, 1fr);
         }
-        100% {
-          opacity: 1;
-          transform: translateX(0);
+      }
+      
+      @media (max-width: 768px) {
+        .grid-2, .grid-3, .grid-4 {
+          grid-template-columns: 1fr;
+        }
+        
+        .navbar-links {
+          display: none;
         }
       }
     </style>
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
-    <div>
-      <link href="./index.css" rel="stylesheet" />
-
-      <div class="home-container">
-        <div class="home-header">
-          <header
-            data-thq="thq-navbar"
-            class="navbarContainer home-navbar-interactive"
-          >
-            <span ><link class="logo" href="./logo.webp"/></span>
-            <div data-thq="thq-navbar-nav" class="home-desktop-menu">
-              <nav class="home-links">
-                <span class="bodySmall">Home</span>
-                <span class="home-nav22 bodySmall">Services</span>
-                <span class="home-nav32 bodySmall">Portfolio</span>
-                <span class="home-nav42 bodySmall">Contact</span>
-              </nav>
-              <div class="home-buttons">
-                <button class="home-login buttonFlat">Login</button>
-                <button class="buttonFilled">Register</button>
-              </div>
-            </div>
-            <div data-thq="thq-burger-menu" class="home-burger-menu">
-              <svg viewBox="0 0 1024 1024" class="home-icon socialIcons">
-                <path
-                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                ></path>
-              </svg>
-            </div>
-            <div
-              data-thq="thq-mobile-menu"
-              class="home-mobile-menu1 mobileMenu"
-            >
-              <div class="home-nav">
-                <div class="home-top">
-                  <span class="logo">stardomhomes.com.au</span>
-                  <div data-thq="thq-close-menu" class="home-close-menu">
-                    <svg
-                      viewBox="0 0 1024 1024"
-                      class="home-icon02 socialIcons"
-                    >
-                      <path
-                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <nav class="home-links1">
-                  <span class="home-nav121 bodySmall">Home</span>
-                  <span class="home-nav221 bodySmall">Services</span>
-                  <span class="home-nav321 bodySmall">Portfolio</span>
-                  <span class="home-nav421 bodySmall">Contact</span>
-                </nav>
-                <div class="home-buttons1">
-                  <button class="buttonFlat">Login</button>
-                  <button class="buttonFilled">Register</button>
-                </div>
-              </div>
-              <div>
-                <svg
-                  viewBox="0 0 950.8571428571428 1024"
-                  class="home-icon04 socialIcons"
-                >
-                  <path
-                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
-                  ></path></svg
-                ><svg
-                  viewBox="0 0 877.7142857142857 1024"
-                  class="home-icon06 socialIcons"
-                >
-                  <path
-                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
-                  ></path></svg
-                ><svg
-                  viewBox="0 0 602.2582857142856 1024"
-                  class="home-icon08 socialIcons"
-                >
-                  <path
-                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-          </header>
-        </div>
-        <div class="home-hero">
-          <div class="heroContainer home-hero1">
-            <div class="home-container01">
-              <h1 class="home-hero-heading heading1">
-                Building Dreams, One Home at a Time
-              </h1>
-              <span class="home-hero-sub-heading bodyLarge">
-                <span>
-                  <span>
-                    <span>Your Trusted Partner in House Construction</span>
-                    <span></span>
-                  </span>
-                  <span>
-                    <span></span>
-                    <span></span>
-                  </span>
-                </span>
-                <span>
-                  <span>
-                    <span></span>
-                    <span></span>
-                  </span>
-                  <span>
-                    <span></span>
-                    <span></span>
-                  </span>
-                </span>
-              </span>
-              <div class="home-btn-group">
-                <button class="buttonFilled">Get Started</button>
-                <button class="buttonFlat">Learn More&nbsp;→</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="home-features">
-          <div class="featuresContainer">
-            <div class="home-features1">
-              <div class="home-container02">
-                <span class="overline">
-                  <span>features</span>
-                  <br />
-                </span>
-                <h2 class="home-features-heading heading2">
-                  Our Unique Features
-                </h2>
-                <span class="home-features-sub-heading bodyLarge">
-                  <span>
-                    <span>
-                      <span>
-                        Discover what sets us apart in creating your ideal home
-                      </span>
-                      <span></span>
-                    </span>
-                    <span>
-                      <span></span>
-                      <span></span>
-                    </span>
-                  </span>
-                  <span>
-                    <span>
-                      <span></span>
-                      <span></span>
-                    </span>
-                    <span>
-                      <span></span>
-                      <span></span>
-                    </span>
-                  </span>
-                </span>
-              </div>
-              <div class="home-container03">
-                <div class="featuresCard feature-card-feature-card">
-                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
-                    <path
-                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
-                    ></path>
-                  </svg>
-                  <div class="feature-card-container">
-                    <h3 class="feature-card-text heading3">
-                      <span>Custom Home Construction</span>
-                    </h3>
-                    <span class="bodySmall">
-                      <span>
-                        Build your dream home from scratch on free land
-                      </span>
-                    </span>
-                  </div>
-                </div>
-                <div class="featuresCard feature-card-feature-card">
-                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
-                    <path
-                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
-                    ></path>
-                  </svg>
-                  <div class="feature-card-container">
-                    <h3 class="feature-card-text heading3">
-                      <span>Granny Flat Construction</span>
-                    </h3>
-                    <span class="bodySmall">
-                      <span>
-                        Construct a cozy granny flat for additional living space
-                      </span>
-                    </span>
-                  </div>
-                </div>
-                <div class="featuresCard feature-card-feature-card">
-                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
-                    <path
-                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
-                    ></path>
-                  </svg>
-                  <div class="feature-card-container">
-                    <h3 class="feature-card-text heading3">
-                      <span>Home Renovation Services</span>
-                    </h3>
-                    <span class="bodySmall">
-                      <span>
-                        Expertise in breaking down and reconstructing existing
-                        homes
-                      </span>
-                    </span>
-                  </div>
-                </div>
-                <div class="featuresCard feature-card-feature-card">
-                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
-                    <path
-                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
-                    ></path>
-                  </svg>
-                  <div class="feature-card-container">
-                    <h3 class="feature-card-text heading3">
-                      <span>Family-Oriented Design</span>
-                    </h3>
-                    <span class="bodySmall">
-                      <span>
-                        Focus on creating a warm and loving environment for your
-                        family
-                      </span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="home-pricing">
-          <div class="pricingContainer">
-            <div class="home-container04">
-              <span class="overline">
-                <span>Pricing</span>
-                <br />
-              </span>
-              <h2 class="heading2">Choose Your Consultation</h2>
-              <span class="home-pricing-sub-heading bodyLarge">
-                <span>
-                  <span>
-                    Select the perfect package for your dream home construction
-                    needs
-                  </span>
-                </span>
-              </span>
-            </div>
-            <div class="home-container05">
-              <div class="freePricingCard home-pricing-card">
-                <div class="home-container06">
-                  <span class="home-text36 heading3">Free Consultation</span>
-                  <span class="bodySmall">
-                    Ideal for those looking to build their dream home on
-                    available land
-                  </span>
-                </div>
-                <div class="home-container07">
-                  <span class="home-text37">
-                    <span>$</span>
-                    <span></span>
-                  </span>
-                  <span class="home-free-plan-price">0</span>
-                </div>
-                <div class="home-container08">
-                  <div class="home-container09">
-                    <span class="home-text40">✔</span>
-                    <span class="bodySmall">
-                      Construction of houses on free land
-                    </span>
-                  </div>
-                  <div class="home-container10">
-                    <span class="home-text41">✔</span>
-                    <span class="bodySmall">Basic design consultation</span>
-                  </div>
-                  <div class="home-container11">
-                    <span class="home-text42">✔</span>
-                    <span class="bodySmall">Limited customization options</span>
-                  </div>
-                  <div class="home-container12">
-                    <span class="home-text43">✔</span>
-                    <span class="bodySmall">
-                      Standard construction materials
-                    </span>
-                  </div>
-                </div>
-                <button class="home-button buttonOutline">
-                  Continue with Free
-                </button>
-              </div>
-              <div class="basicPricingCard home-pricing-card1">
-                <div class="home-container13">
-                  <span class="home-text44 heading3">BASIC</span>
-                  <span class="bodySmall">
-                    Perfect for adding a granny flat to your property
-                  </span>
-                </div>
-                <div class="home-container14">
-                  <span class="home-text45">
-                    <span>$</span>
-                    <span></span>
-                  </span>
-                  <span class="home-basic-plan-pricing">299</span>
-                  <span class="home-text48">/ month</span>
-                </div>
-                <div class="home-container15">
-                  <div class="home-container16">
-                    <span class="home-text49">✔</span>
-                    <span class="bodySmall">All features of FREE plan</span>
-                  </div>
-                  <div class="home-container17">
-                    <span class="home-text51">✔</span>
-                    <span class="bodySmall">Construction of granny flats</span>
-                  </div>
-                  <div class="home-container18">
-                    <span class="home-text52">✔</span>
-                    <span class="bodySmall">
-                      Site inspection and assessment
-                    </span>
-                  </div>
-                  <div class="home-container19">
-                    <span class="home-text53">✔</span>
-                    <span class="bodySmall">Customizable floor plans</span>
-                  </div>
-                  <div class="home-container20">
-                    <span class="home-text54">✔</span>
-                    <span class="bodySmall">Quality finishing touches</span>
-                  </div>
-                </div>
-                <button class="home-button1 buttonFilledSecondary">
-                  Try the Basic plan
-                </button>
-              </div>
-              <div class="proPricingCard home-pricing-card2">
-                <div class="home-container21">
-                  <span class="home-text55 heading3">
-                    <span>PRO</span>
-                    <br />
-                  </span>
-                  <span class="bodySmall">
-                    For those seeking to renovate or rebuild their existing home
-                  </span>
-                </div>
-                <div class="home-container22">
-                  <span class="home-text58">
-                    <span>$</span>
-                    <span></span>
-                  </span>
-                  <span class="home-pro-plan-pricing">9999</span>
-                  <span class="home-text61">/ month</span>
-                </div>
-                <div class="home-container23">
-                  <div class="home-container24">
-                    <span class="home-text62">✔</span>
-                    <span class="bodySmall">
-                      &nbsp;All features of BASIC plan
-                    </span>
-                  </div>
-                  <div class="home-container25">
-                    <span class="home-text64">✔</span>
-                    <span class="bodySmall">
-                      Break and re-construct existing homes
-                    </span>
-                  </div>
-                  <div class="home-container26">
-                    <span class="home-text65">✔</span>
-                    <span class="bodySmall">Detailed project planning</span>
-                  </div>
-                  <div class="home-container27">
-                    <span class="home-text66">✔</span>
-                    <span class="bodySmall">Premium material selection</span>
-                  </div>
-                  <div class="home-container28">
-                    <span class="home-text67">✔</span>
-                    <span class="bodySmall">
-                      Personalized interior design services
-                    </span>
-                  </div>
-                </div>
-                <button class="home-button2 buttonFilledSecondary">
-                  Try the PRO plan
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="home-banner">
-          <div class="bannerContainer home-banner1">
-            <h1 class="home-banner-heading heading2">
-              Welcome to Our House Construction Company
-            </h1>
-            <span class="home-banner-sub-heading bodySmall">
-              <span>
-                <span>
-                  <span>
-                    At our house construction company, we specialize in creating
-                    beautiful homes for families. Whether you have free land or
-                    an existing property, we can help you build your dream home.
-                    From granny flats to complete house constructions, we are
-                    here to turn your vision into reality. With a focus on
-                    quality craftsmanship and attention to detail, we ensure
-                    that every home we build is a cozy and loving space for you
-                    and your family to enjoy for years to come.
-                  </span>
-                  <span></span>
-                </span>
-                <span>
-                  <span></span>
-                  <span></span>
-                </span>
-              </span>
-              <span>
-                <span>
-                  <span></span>
-                  <span></span>
-                </span>
-                <span>
-                  <span></span>
-                  <span></span>
-                </span>
-              </span>
-            </span>
-            <button class="buttonFilled">Learn More</button>
-          </div>
-        </div>
-        <div class="home-faq">
-          <div class="faqContainer">
-            <div class="home-faq1">
-              <div class="home-container29">
-                <span class="overline">
-                  <span>FAQ</span>
-                  <br />
-                </span>
-                <h2 class="home-text85 heading2">Common questions</h2>
-                <span class="home-text86 bodyLarge">
-                  <span>
-                    Here are some of the most common questions that we get.
-                  </span>
-                  <br />
-                </span>
-              </div>
-              <div class="home-container30">
-                <div class="question1-container">
-                  <span class="question1-text heading3">
-                    <span>Can I build a house on my own land?</span>
-                  </span>
-                  <span class="bodySmall">
-                    <span>
-                      Yes, our company allows construction of houses on free
-                      land.
-                    </span>
-                  </span>
-                </div>
-                <div class="question1-container">
-                  <span class="question1-text heading3">
-                    <span>
-                      Do you provide services for building granny flats?
-                    </span>
-                  </span>
-                  <span class="bodySmall">
-                    <span>
-                      Yes, we offer construction services for granny flats as
-                      well.
-                    </span>
-                  </span>
-                </div>
-                <div class="question1-container">
-                  <span class="question1-text heading3">
-                    <span>
-                      Can you help with breaking and re-constructing existing
-                      homes?
-                    </span>
-                  </span>
-                  <span class="bodySmall">
-                    <span>
-                      Absolutely, we specialize in breaking and re-constructing
-                      homes for existing properties.
-                    </span>
-                  </span>
-                </div>
-                <div class="question1-container">
-                  <span class="question1-text heading3">
-                    <span>What sets your construction company apart?</span>
-                  </span>
-                  <span class="bodySmall">
-                    <span>
-                      We focus on creating cozy and loving homes for families,
-                      not just properties.
-                    </span>
-                  </span>
-                </div>
-                <div class="question1-container">
-                  <span class="question1-text heading3">
-                    <span>
-                      Do you offer customization options for house construction?
-                    </span>
-                  </span>
-                  <span class="bodySmall">
-                    <span>
-                      Yes, we provide customization options to tailor the house
-                      to your needs and preferences.
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="home-footer">
-          <footer class="footerContainer home-footer1">
-            <div class="home-container31">
-              <span class="logo">stardomhomes.com.au</span>
-              <nav class="home-nav1">
-                <span class="bodySmall">Home</span>
-                <span class="home-nav222 bodySmall">Services</span>
-                <span class="home-nav322 bodySmall">Portfolio</span>
-                <span class="home-nav422 bodySmall">Contact</span>
-              </nav>
-            </div>
-            <div class="home-separator"></div>
-            <div class="home-container32">
-              <span class="bodySmall home-text89">
-                © 2023 myCompany, All Rights Reserved.
-              </span>
-              <div class="home-icon-group1">
-                <svg
-                  viewBox="0 0 950.8571428571428 1024"
-                  class="home-icon10 socialIcons"
-                >
-                  <path
-                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
-                  ></path></svg
-                ><svg
-                  viewBox="0 0 877.7142857142857 1024"
-                  class="home-icon12 socialIcons"
-                >
-                  <path
-                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
-                  ></path></svg
-                ><svg
-                  viewBox="0 0 602.2582857142856 1024"
-                  class="home-icon14 socialIcons"
-                >
-                  <path
-                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-          </footer>
+    
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <a href="#" class="navbar-logo">Stardom <span>Homes</span></a>
+      <div class="navbar-links">
+        <a href="#" class="navbar-link">Home</a>
+        <a href="#services" class="navbar-link">Services</a>
+        <a href="#portfolio" class="navbar-link">Portfolio</a>
+        <a href="#about" class="navbar-link">About Us</a>
+        <a href="#contact" class="navbar-link">Contact</a>
+      </div>
+      <button class="premium-button">Get a Quote</button>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <h1 class="premium-heading animate__animated animate__fadeIn" style="font-size: 3.5rem; margin-bottom: 20px;">Building Dreams, <br>One Home at a Time</h1>
+        <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px; color: #555;">Your trusted partner in premium home construction, delivering exceptional craftsmanship and innovative designs for your dream home.</p>
+        <div style="display: flex; gap: 15px; justify-content: center;">
+          <button class="premium-button animate__animated animate__fadeInUp">Start Your Project</button>
+          <button class="secondary-button animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">Explore Our Work</button>
         </div>
       </div>
-    </div>
-    <script
-      data-section-id="navbar"
-      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
-    ></script>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Services</h2>
+          <div class="accent-line"></div>
+          <p>Discover our comprehensive range of premium construction services tailored to meet your specific needs</p>
+        </div>
+        
+        <div class="grid-3">
+          <div class="feature-card">
+            <i class="fas fa-home feature-icon"></i>
+            <h3 style="margin-bottom: 15px; font-family: 'Playfair Display';">Custom Home Construction</h3>
+            <p>Build your dream home from scratch with our expert team guiding you through every step of the process, from design to final touches.</p>
+          </div>
+          
+          <div class="feature-card">
+            <i class="fas fa-house-user feature-icon"></i>
+            <h3 style="margin-bottom: 15px; font-family: 'Playfair Display';">Granny Flat Construction</h3>
+            <p>Add value to your property with a custom-designed granny flat that perfectly complements your existing home.</p>
+          </div>
+          
+          <div class="feature-card">
+            <i class="fas fa-tools feature-icon"></i>
+            <h3 style="margin-bottom: 15px; font-family: 'Playfair Display';">Home Renovation</h3>
+            <p>Transform your existing space with our comprehensive renovation services, breathing new life into your home.</p>
+          </div>
+          
+          <div class="feature-card">
+            <i class="fas fa-drafting-compass feature-icon"></i>
+            <h3 style="margin-bottom: 15px; font-family: 'Playfair Display';">Architectural Design</h3>
+            <p>Our talented architects will work with you to create a custom design that reflects your vision and lifestyle needs.</p>
+          </div>
+          
+          <div class="feature-card">
+            <i class="fas fa-hard-hat feature-icon"></i>
+            <h3 style="margin-bottom: 15px; font-family: 'Playfair Display';">Project Management</h3>
+            <p>We handle every aspect of your construction project, ensuring it stays on schedule and within budget.</p>
+          </div>
+          
+          <div class="feature-card">
+            <i class="fas fa-couch feature-icon"></i>
+            <h3 style="margin-bottom: 15px; font-family: 'Playfair Display';">Interior Design</h3>
+            <p>Complete your home with our interior design services, creating beautiful and functional spaces that you'll love.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Why Choose Us Section -->
+    <section style="padding: 80px 5%; background-color: var(--dl-color-neutral-light);" id="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>Why Choose Stardom Homes</h2>
+          <div class="accent-line"></div>
+          <p>We're committed to excellence in every aspect of our work</p>
+        </div>
+        
+        <div class="grid-2">
+          <div style="display: flex; flex-direction: column; justify-content: center;">
+            <div style="margin-bottom: 30px;">
+              <h3 style="font-family: 'Playfair Display'; margin-bottom: 15px; display: flex; align-items: center;">
+                <i class="fas fa-medal" style="color: var(--dl-color-primary-gold); margin-right: 15px;"></i>
+                Quality Craftsmanship
+              </h3>
+              <p>Our team of skilled craftsmen takes pride in their work, ensuring every detail meets our high standards.</p>
+            </div>
+            
+            <div style="margin-bottom: 30px;">
+              <h3 style="font-family: 'Playfair Display'; margin-bottom: 15px; display: flex; align-items: center;">
+                <i class="fas fa-clock" style="color: var(--dl-color-primary-gold); margin-right: 15px;"></i>
+                Timely Delivery
+              </h3>
+              <p>We understand the importance of timelines and strive to complete every project on schedule without compromising quality.</p>
+            </div>
+            
+            <div style="margin-bottom: 30px;">
+              <h3 style="font-family: 'Playfair Display'; margin-bottom: 15px; display: flex; align-items: center;">
+                <i class="fas fa-dollar-sign" style="color: var(--dl-color-primary-gold); margin-right: 15px;"></i>
+                Transparent Pricing
+              </h3>
+              <p>No hidden costs or surprises - we provide detailed quotes and keep you informed throughout the process.</p>
+            </div>
+          </div>
+          
+          <div style="position: relative;">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
+            <div style="position: absolute; bottom: -20px; right: -20px; background-color: var(--dl-color-primary-gold); padding: 20px; color: white; font-weight: 700; font-size: 1.2rem; border-radius: 2px;">
+              15+ Years<br>Experience
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section style="padding: 80px 5%;" id="portfolio">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Recent Projects</h2>
+          <div class="accent-line"></div>
+          <p>Take a look at some of our beautiful custom-built homes</p>
+        </div>
+        
+        <div class="grid-3">
+          <div style="position: relative; overflow: hidden; border-radius: 4px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80" style="width: 100%; height: 250px; object-fit: cover;" />
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.7), transparent); padding: 20px; color: white;">
+              <h3 style="margin-bottom: 5px; font-family: 'Playfair Display';">Modern Family Home</h3>
+              <p>Waverly, Sydney</p>
+            </div>
+          </div>
+          
+          <div style="position: relative; overflow: hidden; border-radius: 4px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80" style="width: 100%; height: 250px; object-fit: cover;" />
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.7), transparent); padding: 20px; color: white;">
+              <h3 style="margin-bottom: 5px; font-family: 'Playfair Display';">Luxury Beach House</h3>
+              <p>Bondi, Sydney</p>
+            </div>
+          </div>
+          
+          <div style="position: relative; overflow: hidden; border-radius: 4px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80" style="width: 100%; height: 250px; object-fit: cover;" />
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.7), transparent); padding: 20px; color: white;">
+              <h3 style="margin-bottom: 5px; font-family: 'Playfair Display';">Contemporary Granny Flat</h3>
+              <p>Parramatta, Sydney</p>
+            </div>
+          </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+          <button class="secondary-button">View All Projects</button>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonial-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>What Our Clients Say</h2>
+          <div class="accent-line"></div>
+          <p>Hear from homeowners who've experienced our dedication to excellence</p>
+        </div>
+        
+        <div class="grid-3">
+          <div class="testimonial-card">
+            <div style="margin-bottom: 20px;">
+              <i class="fas fa-star" style="color: var(--dl-color-primary-gold);"></i>
+              <i class="fas fa-star" style="color: var(--dl-color-primary-gold);"></i>
+              <i class="fas fa-star" style="color: var(--dl-color-primary-gold);"></i>
+              <i class="fas fa-star" style="color: var(--dl-color-primary-gold);"></i>
+              <i class="fas fa-star" style="color: var(--dl-color-primary-gold);"></i>
+            </div>
+            <p style="margin-bottom: 20px; font-style: italic;">"Working with Stardom Homes was an absolute pleasure. They listened to our ideas and created a home that exceeded our expectations. Their attention to detail and quality craftsmanship is evident in every corner of our new home."</p>
+            <div style="display: flex; align-items: center;">
+              <div style="width: 50px; height: 50px; border-radius: 50%; overflow: hidden; margin-right: 15px;">
+                <img src="https://randomuser.me/api/portraits/women/43.jpg" style="width: 100%; height: 100%; object-fit: cover;" />
+              </div>
+              <div>
+                <h4 style="margin-bottom: 5px;">Sarah Johnson</h4>
+                <p style="font-size: 0.9rem; color: #777;">Custom Home Client</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div style="margin-bottom: 20px;">
+              <i class="fas fa-star" style="color: var(--dl-color-primary-gold);"></i>
+              <i class="fas fa-star" style="color: var(--dl-color-primary-gold);"></i>
+              <i class="fas fa-star" style="color: var(--dl-color-primary-gold);"></i>
+              <i class="fas fa-star" style="color: var(--dl-color-primary-gold);"></i>
+              <i class="fas fa-star" style="color: var(--dl-color-primary-gold);"></i>
+            </div>
+            <p style="margin-bottom: 20px; font-style: italic;">"The team at Stardom Homes made our renovation project stress-free. They were professional, transparent about costs, and completed the work on time. We love our newly renovated space and highly recommend their services."</p>
+            <div style="display: flex; align-items: center;">
+              <div style="width: 50px; height: 50px; border-radius: 50%; overflow: hidden; margin-right: 15px;">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" style="width: 100%; height: 100%; object-fit: cover;" />
+              </div>
+              <div>
+                <h4 style="margin-bottom: 5px;">Michael Thompson</h4>
+                <p style="font-size: 0.9rem; color: #777;">Renovation Client</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div style="margin-bottom: 20px;">
+              <i class="fas fa-star" style="color: var(--dl-color-primary-gold);"></i>
+              <i class="fas fa-star" style="color: var(--dl-color-primary-gold);"></i>
+              <i class="fas fa-star" style="color: var(--dl-color-primary-gold);"></i>
+              <i class="fas fa-star" style="color: var(--dl-color-primary-gold);"></i>
+              <i class="fas fa-star" style="color: var(--dl-color-primary-gold);"></i>
+            </div>
+            <p style="margin-bottom: 20px; font-style: italic;">"The granny flat Stardom Homes built for us is perfect! It's beautiful, functional, and has added significant value to our property. Their team was courteous and respectful throughout the entire process."</p>
+            <div style="display: flex; align-items: center;">
+              <div style="width: 50px; height: 50px; border-radius: 50%; overflow: hidden; margin-right: 15px;">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" style="width: 100%; height: 100%; object-fit: cover;" />
+              </div>
+              <div>
+                <h4 style="margin-bottom: 5px;">Emily Parker</h4>
+                <p style="font-size: 0.9rem; color: #777;">Granny Flat Client</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section style="padding: 100px 5%; background-color: var(--dl-color-neutral-dark); color: white; text-align: center;">
+      <div class="container">
+        <h2 style="font-family: 'Playfair Display'; font-size: 2.5rem; margin-bottom: 20px;">Ready to Start Building Your Dream Home?</h2>
+        <p style="max-width: 700px; margin: 0 auto 30px; font-size: 1.1rem;">Contact us today for a free consultation. Our team is ready to bring your vision to life with our expertise in premium home construction.</p>
+        <button class="premium-button" style="padding: 15px 40px; font-size: 1.1rem;">Request a Free Quote</button>
+      </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section style="padding: 80px 5%;" id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Get In Touch</h2>
+          <div class="accent-line"></div>
+          <p>We'd love to hear from you. Contact us with any questions about our services.</p>
+        </div>
+        
+        <div class="grid-2">
+          <div>
+            <h3 style="font-family: 'Playfair Display'; margin-bottom: 20px;">Contact Information</h3>
+            <div style="margin-bottom: 20px; display: flex; align-items: flex-start;">
+              <i class="fas fa-map-marker-alt" style="color: var(--dl-color-primary-gold); margin-right: 15px; margin-top: 5px;"></i>
+              <p>123 Construction Avenue, Sydney, NSW 2000, Australia</p>
+            </div>
+            
+            <div style="margin-bottom: 20px; display: flex; align-items: flex-start;">
+              <i class="fas fa-phone" style="color: var(--dl-color-primary-gold); margin-right: 15px; margin-top: 5px;"></i>
+              <p>+61 2 1234 5678</p>
+            </div>
+            
+            <div style="margin-bottom: 20px; display: flex; align-items: flex-start;">
+              <i class="fas fa-envelope" style="color: var(--dl-color-primary-gold); margin-right: 15px; margin-top: 5px;"></i>
+              <p>info@stardomhomes.com.au</p>
+            </div>
+            
+            <div style="margin-bottom: 20px; display: flex; align-items: flex-start;">
+              <i class="fas fa-clock" style="color: var(--dl-color-primary-gold); margin-right: 15px; margin-top: 5px;"></i>
+              <p>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 2:00 PM<br>Sunday: Closed</p>
+            </div>
+            
+            <div style="margin-top: 30px;">
+              <h3 style="font-family: 'Playfair Display'; margin-bottom: 20px;">Follow Us</h3>
+              <div>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <form style="background-color: var(--dl-color-neutral-light); padding: 30px; border-radius: 4px;">
+              <h3 style="font-family: 'Playfair Display'; margin-bottom: 20px;">Send Us a Message</h3>
+              
+              <div style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 8px; font-weight: 500;">Full Name *</label>
+                <input type="text" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px;" required />
+              </div>
+              
+              <div style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 8px; font-weight: 500;">Email Address *</label>
+                <input type="email" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px;" required />
+              </div>
+              
+              <div style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 8px; font-weight: 500;">Phone Number</label>
+                <input type="tel" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px;" />
+              </div>
+              
+              <div style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 8px; font-weight: 500;">Service Interested In</label>
+                <select style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px;">
+                  <option>Select a Service</option>
+                  <option>Custom Home Construction</option>
+                  <option>Granny Flat Construction</option>
+                  <option>Home Renovation</option>
+                  <option>Architectural Design</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              
+              <div style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 8px; font-weight: 500;">Message *</label>
+                <textarea style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; min-height: 150px;" required></textarea>
+              </div>
+              
+              <button type="submit" class="premium-button" style="width: 100%;">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="grid-4" style="margin-bottom: 40px;">
+          <div>
+            <h3 style="font-family: 'Playfair Display'; color: white; margin-bottom: 20px;">Stardom <span style="color: var(--dl-color-primary-gold);">Homes</span></h3>
+            <p style="color: #ccc; margin-bottom: 20px;">Building dreams, one home at a time. Your trusted partner in premium house construction.</p>
+            <div>
+              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+          </div>
+          
+          <div>
+            <h4 style="color: white; margin-bottom: 20px;">Quick Links</h4>
+            <ul style="list-style: none; padding: 0;">
+              <li style="margin-bottom: 10px;"><a href="#" class="footer-link">Home</a></li>
+              <li style="margin-bottom: 10px;"><a href="#services" class="footer-link">Services</a></li>
+              <li style="margin-bottom: 10px;"><a href="#portfolio" class="footer-link">Portfolio</a></li>
+              <li style="margin-bottom: 10px;"><a href="#about" class="footer-link">About Us</a></li>
+              <li style="margin-bottom: 10px;"><a href="#contact" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 style="color: white; margin-bottom: 20px;">Our Services</h4>
+            <ul style="list-style: none; padding: 0;">
+              <li style="margin-bottom: 10px;"><a href="#" class="footer-link">Custom Home Construction</a></li>
+              <li style="margin-bottom: 10px;"><a href="#" class="footer-link">Granny Flat Construction</a></li>
+              <li style="margin-bottom: 10px;"><a href="#" class="footer-link">Home Renovation</a></li>
+              <li style="margin-bottom: 10px;"><a href="#" class="footer-link">Architectural Design</a></li>
+              <li style="margin-bottom: 10px;"><a href="#" class="footer-link">Interior Design</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 style="color: white; margin-bottom: 20px;">Contact Us</h4>
+            <ul style="list-style: none; padding: 0;">
+              <li style="margin-bottom: 10px; color: #ccc;"><i class="fas fa-map-marker-alt" style="color: var(--dl-color-primary-gold); margin-right: 10px;"></i> 123 Construction Avenue, Sydney, NSW 2000</li>
+              <li style="margin-bottom: 10px; color: #ccc;"><i class="fas fa-phone" style="color: var(--dl-color-primary-gold); margin-right: 10px;"></i> +61 2 1234 5678</li>
+              <li style="margin-bottom: 10px; color: #ccc;"><i class="fas fa-envelope" style="color: var(--dl-color-primary-gold); margin-right: 10px;"></i> info@stardomhomes.com.au</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div style="border-top: 1px solid #444; padding-top: 20px; text-align: center; color: #888;">
+          <p>&copy; 2024 Stardom Homes. All Rights Reserved. | <a href="#" class="footer-link">Privacy Policy</a> | <a href="#" class="footer-link">Terms of Service</a></p>
+        </div>
+      </div>
+    </footer>
+    
+    <script>
+      // Simple sticky navbar effect
+      window.onscroll = function() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          document.querySelector('.navbar').style.padding = '10px 5%';
+          document.querySelector('.navbar').style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+        } else {
+          document.querySelector('.navbar').style.padding = '15px 5%';
+          document.querySelector('.navbar').style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+        }
+      };
+      
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
   </body>
 </html>
